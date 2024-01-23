@@ -3,14 +3,11 @@ const employee = {
   streetAddress: "address"
 };
 
-
-
 function updateEmployeeWithKeyAndValue(employee, key, value) {
   const newObj = { ...employee };
   newObj[key] = value;
   return newObj;
 };
-
 
 function destructivelyUpdateEmployeeWithKeyAndValue(employee, key, value) {
   employee[key] = value;
@@ -27,3 +24,5 @@ function destructivelyDeleteFromEmployeeByKey(employee, key) {
   delete employee[key];
   return employee;
 };
+
+//Commit 7:31pm
